@@ -1,34 +1,49 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - main
+
 jobs:
   build:
+    name: Build
     runs-on: ubuntu-latest
-    container:
-      image: emscripten/emsdk
-      
+
     steps:
-    - uses: actions/checkout@v3
-    - run: cmake -B build -DCMAKE_BUILD_TYPE=${{env.BUILD_TYPE}} -DEMSCRIPTEN=ON
-    - run: cmake --build build --config ${{env.BUILD_TYPE}}
-    - uses: actions/upload-artifact@master
-      with:
-        name: page
-        path: build
-        if-no-files-found: error
-    
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+
+      - name: Install dependencies
+        uses: bahmutov/npm-install@v1
+
+      - name: Build project
+        run: npm run build
+
+      - name: Upload production-ready build files
+        uses: actions/upload-artifact@v3
+        with:
+          name: production-files
+          path: /dist
+
   deploy:
-    runs-on: ubuntu-latest
+    name: Deploy
     needs: build
-    environment:
-      name: github-pages
-      url: ${{steps.deployment.outputs.page_url}}
-      
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+
     steps:
-    - uses: actions/download-artifact@master
-      with:
-        name: page
-        path: .
-    - uses: actions/configure-pages@v1
-    - uses: actions/upload-pages-artifact@v1
-      with:
-        path: .
-    - id: deployment
-      uses: actions/deploy-pages@main
+      - name: Download artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: production-files
+          path: /dist
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: /dist
