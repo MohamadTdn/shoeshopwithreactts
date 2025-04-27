@@ -47,3 +47,17 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
+
+          name: "Download a Build Artifact"
+description: "Download a build artifact that was previously uploaded in the workflow by the upload-artifact action"
+author: "GitHub"
+inputs:
+  name:
+    description: "Artifact name"
+    required: false
+  path:
+    description: "Destination path"
+    required: false
+runs:
+  using: "node16"
+  main: "dist/index.js"
