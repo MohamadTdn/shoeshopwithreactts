@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@layer components {
+  .banner-link {
+    @apply hover:border-b-2 transition-all text-2xl text-center
+  }
+  .active {
+    @apply border-b-2 border-black
+  }
+}
+
+@utility container {
+  width: 1350px;
+  margin: auto;
+}
