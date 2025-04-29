@@ -15,15 +15,15 @@ export default function AllProducts(): React.JSX.Element {
         </select>
 
         <div className="flex flex-wrap gap-5">
-          <ShopProduct img="/public/images/card-item1.jpg" title="Runnig Shoe" price={50}/>
-          <ShopProduct img="/public/images/card-item3.jpg" title="Runnig Shoe" price={50}/>
-          <ShopProduct img="/public/images/card-item2.jpg" title="Runnig Shoe" price={50}/>
-          <ShopProduct img="/public/images/card-item5.jpg" title="Runnig Shoe" price={50}/>
-          <ShopProduct img="/public/images/card-item6.jpg" title="Runnig Shoe" price={50}/>
-          <ShopProduct img="/public/images/card-item7.jpg" title="Runnig Shoe" price={50}/>
-          <ShopProduct img="/public/images/card-item8.jpg" title="Runnig Shoe" price={50}/>
-          <ShopProduct img="/public/images/card-item9.jpg" title="Runnig Shoe" price={50}/>
-          <ShopProduct img="/public/images/card-item10.jpg" title="Runnig Shoe" price={50}/>
+          <ShopProduct img="/images/card-item1.jpg" title="Runnig Shoe" price={50}/>
+          <ShopProduct img="/images/card-item3.jpg" title="Runnig Shoe" price={50}/>
+          <ShopProduct img="/images/card-item2.jpg" title="Runnig Shoe" price={50}/>
+          <ShopProduct img="/images/card-item5.jpg" title="Runnig Shoe" price={50}/>
+          <ShopProduct img="/images/card-item6.jpg" title="Runnig Shoe" price={50}/>
+          <ShopProduct img="/images/card-item7.jpg" title="Runnig Shoe" price={50}/>
+          <ShopProduct img="/images/card-item8.jpg" title="Runnig Shoe" price={50}/>
+          <ShopProduct img="/images/card-item9.jpg" title="Runnig Shoe" price={50}/>
+          <ShopProduct img="/images/card-item10.jpg" title="Runnig Shoe" price={50}/>
         </div>
       </div>
       <ShopSidebar/>

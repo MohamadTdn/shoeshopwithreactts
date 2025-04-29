@@ -9,7 +9,7 @@ export default function BlogSidebar(): React.JSX.Element {
       <div>
         <img
           className="w-80 h-70"
-          src="/public/images/card-item2.jpg"
+          src="/images/card-item2.jpg"
           alt=""
         />
       </div>
@@ -43,17 +43,17 @@ export default function BlogSidebar(): React.JSX.Element {
       <div>
         <h5 className="text-3xl font-bold">Recent Posts</h5>
         <RecentBlogPost
-          img="/public/images/post-item1.jpg"
+          img="/images/post-item1.jpg"
           title="Shoes is the first thing to notice"
           date={new Date()}
         />
         <RecentBlogPost
-          img="/public/images/post-item2.jpg"
+          img="/images/post-item2.jpg"
           title="Shoes is the first thing to notice"
           date={new Date()}
         />
         <RecentBlogPost
-          img="/public/images/post-item3.jpg"
+          img="/images/post-item3.jpg"
           title="Shoes is the first thing to notice"
           date={new Date()}
         />

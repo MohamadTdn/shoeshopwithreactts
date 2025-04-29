@@ -13,7 +13,7 @@ export default function ProductInfo(): React.JSX.Element {
           <div>
             <img
               className="w-100 md:w-300"
-              src="/public/images/card-item7 (1).jpg"
+              src="/images/card-item7 (1).jpg"
               alt=""
             />
           </div>

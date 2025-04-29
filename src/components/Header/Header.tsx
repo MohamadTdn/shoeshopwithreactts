@@ -13,7 +13,7 @@ export default function Header(): React.JSX.Element {
     <>
       <header className="hidden lg:flex justify-between items-center pr-6 pl-6">
         <div>
-          <img src="/public/images/main-logo.png" alt="" />
+          <img src="/images/main-logo.png" alt="" />
         </div>
         <div className="flex">
           <ul className="flex *:text-2xl gap-x-6">
@@ -76,7 +76,7 @@ export default function Header(): React.JSX.Element {
 
       <div className="mobile-header flex justify-between items-center lg:hidden pr-6 pl-6">
         <div>
-          <img src="/public/images/main-logo.png" alt="" />
+          <img src="/images/main-logo.png" alt="" />
         </div>
         <div className="flex gap-x-5">
           <FaUser />
@@ -94,7 +94,7 @@ export default function Header(): React.JSX.Element {
             } top-0 left-0 right-0 min-h-screen z-10 bg-white p-4 transition-all overflow-hidden`}
           >
             <div className="flex justify-between items-center">
-              <img src="/public/images/main-logo.png" alt="" />
+              <img src="/images/main-logo.png" alt="" />
               <div>
                 <IoMdClose
                   onClick={() => setIsMenuOpen(false)}
