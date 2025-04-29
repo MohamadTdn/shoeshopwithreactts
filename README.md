@@ -15,6 +15,12 @@
 
 #### All Responsive
 
+#### you can see app with this command
+
+```
+npm run dev
+```
+
 ## Images of demo
 
 ---
