@@ -1,5 +1,4 @@
 {
-  "homepage": "https://MohamadTdn.github.io/shoeshopwithreactts",
   "name": "shoeshopwithreactts",
   "private": true,
   "version": "0.0.0",
@@ -8,9 +7,7 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@actions/artifact": "^2.3.2",
