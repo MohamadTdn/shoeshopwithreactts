@@ -43,3 +43,7 @@ npm run dev
 #### Blog Page
 
 ![Blog Page](/public/demos/Blog.png)
+
+#### Single Product Page
+
+![Single Product Page](/public/demos/singleproduct.png)
