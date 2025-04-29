@@ -17,4 +17,4 @@
 
 ## Click Here To See Demo
 
-[Demo](https://shoeshopwithreactts.liara.run/)
+[Demo](https://shoeshop.liara.run/)
