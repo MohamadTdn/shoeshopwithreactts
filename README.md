@@ -2,7 +2,7 @@
 
 ---
 
-## Shoe Shop Landing with React TypeScript and Tailwind
+## Shoe Shop Website with React TypeScript and Tailwind
 
 ### Technologies in this project :
 
@@ -14,6 +14,11 @@
 6. Vite
 
 ## Created by Mohamad Tadayon 
+
+#### Pages : 
+1. Home
+2. Blog
+3. Shop
 
 #### All Responsive
 
