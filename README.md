@@ -8,8 +8,10 @@
 
 1. ReactJs
 2. TypeScript
-3. React Icons
-4. React Router Dom
+3. Tailwind CSS
+4. React Icons
+5. React Router Dom
+6. Vite
 
 ## Created by Mohamad Tadayon 
 
