@@ -15,6 +15,18 @@
 
 #### All Responsive
 
-## Click Here To See Demo
+## Images of demo
 
-[Demo](https://shoeshop.liara.run/)
+---
+
+#### Home Page
+
+![Home Page](/public/demos/Home.png)
+
+#### Shop Page
+
+![Shop Page](/public/demos/Shop.png)
+
+#### Blog Page
+
+![Blog Page](/public/demos/Blog.png)
